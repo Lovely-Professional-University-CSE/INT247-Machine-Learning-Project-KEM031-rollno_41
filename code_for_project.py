@@ -67,3 +67,22 @@ print(labels)
 crime_data["Clus_km"] = labels
 print(crime_data.head(5))
 print(crime_data.groupby('Clus_km').mean())
+
+#Visualising the clusters
+#Distribution of districts based on Murder and Total IPC Crimes
+plt.scatter(X[:, 0], X[:, 9],c=labels.astype(np.float), alpha=0.5)
+plt.xlabel('Murder', fontsize=18)
+plt.ylabel('Total IPC Crimes', fontsize=16)
+print(plt.show())
+
+#Distribution of districts based on Rape and Total IPC Crimes
+plt.scatter(X[:, 1], X[:, 9],c=labels.astype(np.float), alpha=0.5)
+plt.xlabel('Rape', fontsize=18)
+plt.ylabel('Total IPC Crimes', fontsize=16)
+print(plt.show())
+
+#Distribution of districts based on Sexual Harassment and Total IPC Crimes
+plt.scatter(X[:, 6], X[:, 9],c=labels.astype(np.float), alpha=0.5)
+plt.xlabel('Sexual Harassment', fontsize=18)
+plt.ylabel('Total IPC Crimes', fontsize=16)
+print(plt.show())
