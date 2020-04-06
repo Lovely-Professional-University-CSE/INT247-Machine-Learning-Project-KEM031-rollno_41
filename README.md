@@ -1,5 +1,11 @@
 # INT247-Machine-Learning-Project-KEM031-rollno_41
 
+##Number of members in team - 1
+
+##Name - Ishwar Patel
+
+##Reg No - 11707807
+
 Topic - Criminal Behaviour Analysis and Segmentation
 
 Algorithm used for segmentation- K-Means Clustering
