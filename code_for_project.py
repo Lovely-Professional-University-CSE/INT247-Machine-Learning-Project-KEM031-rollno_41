@@ -54,4 +54,16 @@ fig, ax = plt.subplots()
 ax.hist(crime_data['Murder'], range=(0,200), align='mid', histtype='stepfilled',color='r')
 print(plt.show())
 
+#K-Means Clustering
+X=crime_data.values[:,3:]
+print(X[:10])
 
+clusterNum=3
+k_means=KMeans(init = "k-means++", n_clusters = clusterNum, n_init = 12)
+k_means.fit(X)
+labels = k_means.labels_
+print(labels)
+
+crime_data["Clus_km"] = labels
+print(crime_data.head(5))
+print(crime_data.groupby('Clus_km').mean())
