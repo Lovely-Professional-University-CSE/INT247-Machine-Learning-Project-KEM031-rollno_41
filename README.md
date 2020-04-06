@@ -3,3 +3,6 @@
 Topic - Criminal Behaviour Analysis and Segmentation
 
 Algorithm used for segmentation- K-Means Clustering
+
+dataset - crime_data.csv
+
