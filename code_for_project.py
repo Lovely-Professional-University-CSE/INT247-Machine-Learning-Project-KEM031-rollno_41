@@ -41,7 +41,17 @@ plt.ylabel("Crimes")
 plt.bar(crimes,number,0.5,color='grey')
 print(plt.show())
 
+#Scatterplot
+fig, ax = plt.subplots()
+ax.scatter(crime_data["Murder"], crime_data["Rape"],c='orange')
+plt.xlabel("Murder")
+plt.ylabel("Rape")
+plt.title("Crime Data Scatterplot 2014")
+print(plt.show())
 
-
+#Histogram
+fig, ax = plt.subplots()
+ax.hist(crime_data['Murder'], range=(0,200), align='mid', histtype='stepfilled',color='r')
+print(plt.show())
 
 
