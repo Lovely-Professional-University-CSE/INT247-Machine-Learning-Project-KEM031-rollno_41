@@ -13,3 +13,6 @@ print(crime_df.columns)
 crime_data=crime_df[['States/UTs','District','Year','Murder','Rape','Dacoity','Riots','Forgery','Acid attack','Sexual Harassment','Incidence of Rash Driving','HumanTrafficking','Total Cognizable IPC crimes']]
 print(crime_data.head())
 
+#Renaming one of the columns
+crime_data=crime_data.rename(columns={'Total Cognizable IPC crimes':'Total IPC Crimes'})
+print(crime_data.head())
