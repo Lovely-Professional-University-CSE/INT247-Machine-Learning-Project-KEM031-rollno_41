@@ -28,9 +28,9 @@ print(x.plot(kind='barh'))
 #Total IPC Crimes in each State
 y = crime_data.groupby('States/UTs')['Total IPC Crimes'].sum().sort_values()
 plt.figure(figsize=(11,8))
-plt.xlabel("Murders")
+plt.xlabel("Total IPC Crimes")
 plt.ylabel("States/UTs")
-print(x.plot(kind='barh',color='y'))
+print(y.plot(kind='barh',color='y'))
 
 #Total number of each type of Crime
 crimes=['Murder','Rape','Dacoity','Riots','Sexual Harassment']
